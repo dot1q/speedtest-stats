@@ -1,5 +1,5 @@
 <html>
-	<head><title>SandyNet Speedtest Stats</title>
+	<head><title>Speedtest Stats</title>
 	<?php
 		include("header.php");
 	?>
