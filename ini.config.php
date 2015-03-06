@@ -10,6 +10,7 @@ $config['db_host'] = "localhost";
 $config['db_name'] = "database-name";
 $config['db_user'] = "database-username";
 $config['db_pass'] = "database-password";
+$config['db_table'] = "your-table-name";
 
 /* Personalization */
 $config['header-title'] = "Your Company name";
