@@ -1,8 +1,8 @@
 <?php
 	include_once('config.php');
 ?>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
