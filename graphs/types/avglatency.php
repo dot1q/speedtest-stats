@@ -2,8 +2,8 @@
 
 /*
 *
-*	This script will calculate the average speed of a specified interval.
-*	Preconditions include: Company Name String to use and the inerval on which to graph
+*	This script will calculate the average latency of a specified interval.
+*	Preconditions include: ISP, country, city and region
 *
 */
 
@@ -52,11 +52,9 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
-
 //calculate the average
 foreach ($tests as $key => $value){
-	
-	
+
 	$latency[$key] = round(($latency[$key]/$value),2);
 	//echo $key.' '.$value.' '.$total_speed[$key].'<br />';
 	
@@ -65,8 +63,8 @@ foreach ($tests as $key => $value){
 	$xaxis[] = $key;
 }
 
-//TEST GRAPH STUFF 
 
+// Jpgraph configuration
 require_once ('../../jpgraph/src/jpgraph.php');
 require_once ('../../jpgraph/src/jpgraph_line.php');
 
@@ -112,4 +110,3 @@ $graph->legend->SetFrameWeight(1);
 $graph->Stroke();
 
 ?>
-
