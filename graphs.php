@@ -12,7 +12,6 @@
 <?php
 	include("graphs/country.php"); 
 ?>
-				<!--<iframe src="test/index.php" width="900" height="900">></iframe>-->
 			</center>
 
 		</div>
