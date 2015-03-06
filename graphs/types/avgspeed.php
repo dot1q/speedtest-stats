@@ -68,8 +68,7 @@ foreach ($tests as $key => $value){
 	$xaxis[] = $key;
 }
 
-//TEST GRAPH STUFF 
-
+// Jpgraph configuration
 require_once ('../../jpgraph/src/jpgraph.php');
 require_once ('../../jpgraph/src/jpgraph_line.php');
 
@@ -126,4 +125,3 @@ $graph->legend->SetFrameWeight(1);
 $graph->Stroke();
 
 ?>
-
