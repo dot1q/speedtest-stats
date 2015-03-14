@@ -7,10 +7,9 @@
 
 /* Database Information */
 $config['db_host'] = "localhost";
-$config['db_name'] = "database-name";
-$config['db_user'] = "database-username";
-$config['db_pass'] = "database-password";
-$config['db_table'] = "your-table-name";
+$config['db_name'] = "your-database-name";
+$config['db_user'] = "your-database-username";
+$config['db_pass'] = "your-database-password";
 
 /* Personalization */
 $config['header-title'] = "Your Company name";
