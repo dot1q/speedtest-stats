@@ -66,16 +66,24 @@
 <?php
 	echo "Database: ";
 	if(isset($error)){
-		echo "<font color='red'>Offline</font>";
+		echo "<font color='red'>Offline<br /></font>";
 	}else{
-		echo "<font color='green'>Online</font>";
+		echo "<font color='green'>Online<br /></font>";
 	}
-	echo "<br />Config.php: ";
-	if (file_exists(config.php)) {
+	echo "Config.php: ";
+	if (file_exists('config.php')) {
 		echo"<font color='green'>Found<br /></font>";
 	}else{
 		echo"<font color='red'>Missing<br /></font>";
 	}
+/*
+	echo "Jpgraph.php: ";
+	if (file_exists('jpgraph/src/jpgraph.php')) {
+		echo"<font color='green'>Found</font>";
+	}else{
+		echo"<font color='red'>Missing</font>";
+	}
+*/
 ?>
 		  </li>
 		</ul>
