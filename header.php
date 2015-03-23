@@ -1,5 +1,15 @@
 <?php
 	include_once('config.php');
+
+	//check if connection to database if valid
+	$connection = new mysqli($config['db_host'],$config['db_user'],$config['db_pass'], $config['db_name']);
+	mysql_select_db($config['db_name'],$connect); //select the table
+	// Check connection
+	if ($connection->connect_error) {
+	    //$error = "Connection failed: " . $connection->connect_error);
+	    $error = 'failed';
+	}
+
 ?>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!-- Bootstrap core CSS -->
@@ -51,6 +61,22 @@
 			  <li><a href="rdata.php">View Raw Data (WARNING!)</a></li>
 			  <li class="dropdown-header">Version: <?php echo $config['version']; ?></li>
 			</ul>
+		  </li>
+		  <li class="dropdown-header">
+<?php
+	echo "Database: ";
+	if(isset($error)){
+		echo "<font color='red'>Offline</font>";
+	}else{
+		echo "<font color='green'>Online</font>";
+	}
+	echo "<br />Config.php: ";
+	if (file_exists(config.php)) {
+		echo"<font color='green'>Found<br /></font>";
+	}else{
+		echo"<font color='red'>Missing<br /></font>";
+	}
+?>
 		  </li>
 		</ul>
 	  </div><!--/.nav-collapse -->
