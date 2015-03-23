@@ -59,33 +59,40 @@
 			  <li class="dropdown-header">Data Manipulation</li>
 			  <li><a href="import.php">Upload CSV File</a></li>
 			  <li><a href="rdata.php">View Raw Data (WARNING!)</a></li>
-			  <li class="dropdown-header">Version: <?php echo $config['version']; ?></li>
 			</ul>
 		  </li>
-		  <li class="dropdown-header">
+                  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Status<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li class="dropdown-header">Database: 
 <?php
-	echo "Database: ";
-	if(isset($error)){
-		echo "<font color='red'>Offline<br /></font>";
-	}else{
-		echo "<font color='green'>Online<br /></font>";
-	}
-	echo "Config.php: ";
-	if (file_exists('config.php')) {
-		echo"<font color='green'>Found<br /></font>";
-	}else{
-		echo"<font color='red'>Missing<br /></font>";
-	}
-/*
-	echo "Jpgraph.php: ";
-	if (file_exists('jpgraph/src/jpgraph.php')) {
-		echo"<font color='green'>Found</font>";
-	}else{
-		echo"<font color='red'>Missing</font>";
-	}
-*/
+        if(isset($error)){
+                echo "<font color='red'>Offline<br /></font>";
+        }else{
+                echo "<font color='green'>Online<br /></font>";
+        }
 ?>
-		  </li>
+			  </li>
+			  <li class="dropdown-header">Config.php:
+<?php
+ if (file_exists('config.php')) {
+                echo"<font color='green'>Found<br /></font>";
+        }else{
+                echo"<font color='red'>Missing<br /></font>";
+        }
+?>
+			  </li>
+			  <li class="dropdown-header">Jpgraph.php:
+<?php
+        if (file_exists('jpgraph/src/jpgraph.php')) {
+                echo"<font color='green'>Found</font>";
+        }else{
+                echo"<font color='red'>Missing</font>";
+        }
+?>
+                          <li class="dropdown-header">Version: <?php echo $config['version']; ?></li>
+                        </ul>
+                  </li>
 		</ul>
 	  </div><!--/.nav-collapse -->
 	</div>
