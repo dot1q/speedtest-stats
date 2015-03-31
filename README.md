@@ -66,3 +66,10 @@ Anything within double quotes is what you change
 Once you have completed all of these steps your site should be working properly. Navigate to the upload CSV button on the menu bar, and upload the CSV file provided by OOKLA from reporting.ookla.com
 
 Your graphs should render on the fly, and everything should work. If any issues are found please report them to the bugtracker and I will fix them up. 
+
+##Other Fixes
+
+A couple of things have popped up during the configuration that are out of the ordinary. 
+
+### JpGraph Error: 25128
+This issue can be fixed by following the guide here: http://colekcolek.com/2012/05/16/how-to-fix-jpgraph-error-the-function-imageantialias-is-not-available/
