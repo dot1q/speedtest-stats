@@ -73,3 +73,5 @@ A couple of things have popped up during the configuration that are out of the o
 
 ### JpGraph Error: 25128
 This issue can be fixed by following the guide here: http://colekcolek.com/2012/05/16/how-to-fix-jpgraph-error-the-function-imageantialias-is-not-available/
+### Increase PHP file uplaod size
+If needed, you will need to increase the PHP file upload size for php.ini, var **php_value upload_max_filesize**
