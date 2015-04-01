@@ -111,7 +111,7 @@ $graph->Add($gbplot);
 $b1plot->SetColor("white");
 $b1plot->SetFillColor("#cc1111");
 
-$graph->title->Set("Top ".$max_data_points." Highest ISP's Performing Speedtests (Overall)");
+$graph->title->Set("Top ".$max_data_points." ISP's Performing Speedtests (Overall)");
 
 // Display the graph
 $graph->Stroke();
