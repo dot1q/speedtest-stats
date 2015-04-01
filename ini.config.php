@@ -15,6 +15,6 @@ $config['db_pass'] = "your-database-password";
 $config['header-title'] = "Your Company name";
 
 /* Version Information */
-$config['version'] = "0.1.0";
+$config['version'] = "0.1.1";
 
 $config['file-path'] = __DIR__;
